@@ -1,0 +1,1007 @@
+2024-10-05T12:24:23.604+05:30  INFO 23036 --- [CRS] [main] com.eazybyts.boot.CrsApplication         : Starting CrsApplication using Java 17.0.8 with PID 23036 (C:\Users\0042R1744\crs-ws\CRS\target\classes started by GowriSankarAligi in C:\Users\0042R1744\crs-ws\CRS)
+2024-10-05T12:24:23.635+05:30  INFO 23036 --- [CRS] [main] com.eazybyts.boot.CrsApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-05T12:24:26.566+05:30  INFO 23036 --- [CRS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05T12:24:26.963+05:30  INFO 23036 --- [CRS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 362 ms. Found 8 JPA repository interfaces.
+2024-10-05T12:24:29.198+05:30  INFO 23036 --- [CRS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9099 (http)
+2024-10-05T12:24:29.239+05:30  INFO 23036 --- [CRS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-05T12:24:29.240+05:30  INFO 23036 --- [CRS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-05T12:24:29.546+05:30  INFO 23036 --- [CRS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-05T12:24:29.547+05:30  INFO 23036 --- [CRS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5573 ms
+2024-10-05T12:24:30.242+05:30  INFO 23036 --- [CRS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05T12:24:30.429+05:30  INFO 23036 --- [CRS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-05T12:24:30.538+05:30  INFO 23036 --- [CRS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-05T12:24:31.493+05:30  INFO 23036 --- [CRS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05T12:24:31.558+05:30  INFO 23036 --- [CRS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-05T12:24:31.966+05:30  INFO 23036 --- [CRS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59fea5f5
+2024-10-05T12:24:31.972+05:30  INFO 23036 --- [CRS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-05T12:24:36.641+05:30  INFO 23036 --- [CRS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05T12:24:37.388+05:30  INFO 23036 --- [CRS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05T12:24:38.608+05:30  INFO 23036 --- [CRS] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProviderBean
+2024-10-05T12:24:38.611+05:30  WARN 23036 --- [CRS] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-05T12:24:38.728+05:30  INFO 23036 --- [CRS] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-05T12:24:41.823+05:30  INFO 23036 --- [CRS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9099 (http) with context path '/'
+2024-10-05T12:24:41.858+05:30  INFO 23036 --- [CRS] [main] com.eazybyts.boot.CrsApplication         : Started CrsApplication in 20.232 seconds (process running for 23.362)
+2024-10-05T12:27:08.225+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-05T12:27:08.226+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-05T12:27:08.233+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-10-05T12:27:08.378+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:27:08.379+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/register
+2024-10-05T12:27:08.380+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       :  --------- it is an open request ------
+2024-10-05T12:27:08.869+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-4] c.e.boot.exception.CrsExceptionHandler   : validation failed-----> {}
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.eazybyts.boot.dto.ApiResponseDto com.eazybyts.boot.controller.AdminController.registerAdmin(com.eazybyts.boot.dto.AdminDto) with 9 errors: [Field error in object 'adminDto' on field 'firstName': rejected value []; codes [NotBlank.adminDto.firstName,NotBlank.firstName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.firstName,firstName]; arguments []; default message [firstName]]; default message [first name cannot be empty]] [Field error in object 'adminDto' on field 'address.zipCode': rejected value []; codes [NotBlank.adminDto.address.zipCode,NotBlank.address.zipCode,NotBlank.zipCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.address.zipCode,address.zipCode]; arguments []; default message [address.zipCode]]; default message [zip ode cannot be empty]] [Field error in object 'adminDto' on field 'user.userName': rejected value []; codes [NotBlank.adminDto.user.userName,NotBlank.user.userName,NotBlank.userName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.user.userName,user.userName]; arguments []; default message [user.userName]]; default message [username cannot be empty]] [Field error in object 'adminDto' on field 'mobileNo': rejected value []; codes [NotBlank.adminDto.mobileNo,NotBlank.mobileNo,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.mobileNo,mobileNo]; arguments []; default message [mobileNo]]; default message [mobile no cannot be empty]] [Field error in object 'adminDto' on field 'lastName': rejected value []; codes [NotBlank.adminDto.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.lastName,lastName]; arguments []; default message [lastName]]; default message [last name cannot be empty]] [Field error in object 'adminDto' on field 'user.confirmPassword': rejected value []; codes [NotBlank.adminDto.user.confirmPassword,NotBlank.user.confirmPassword,NotBlank.confirmPassword,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.user.confirmPassword,user.confirmPassword]; arguments []; default message [user.confirmPassword]]; default message [confirm password cannot be empty]] [Field error in object 'adminDto' on field 'address.city': rejected value []; codes [NotBlank.adminDto.address.city,NotBlank.address.city,NotBlank.city,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.address.city,address.city]; arguments []; default message [address.city]]; default message [city name cannot be empty]] [Field error in object 'adminDto' on field 'user.password': rejected value []; codes [NotBlank.adminDto.user.password,NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.user.password,user.password]; arguments []; default message [user.password]]; default message [password cannot be empty]] [Field error in object 'adminDto' on field 'address.state': rejected value []; codes [NotBlank.adminDto.address.state,NotBlank.address.state,NotBlank.state,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [adminDto.address.state,address.state]; arguments []; default message [address.state]]; default message [state name cannot be empty]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:144) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:137) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:28:34.548+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:28:34.549+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/login
+2024-10-05T12:28:34.550+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       :  --------- it is an open request ------
+2024-10-05T12:28:34.587+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.AdminController      : ***** authenticating user *****
+2024-10-05T12:28:37.475+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.AdminController      : authorities-----> [CUSTOMER]
+2024-10-05T12:28:37.476+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.AdminController      : name-----> admin
+2024-10-05T12:29:08.106+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:08.107+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:29:08.108+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:08.129+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:08.134+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:08.134+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:08.135+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:08.136+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:11.619+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:11.619+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/addOrUpdate
+2024-10-05T12:29:11.620+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:11.628+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:11.629+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:11.629+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:11.630+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:11.630+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:11.713+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-9] c.e.boot.exception.CrsExceptionHandler   : validation failed-----> {}
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.eazybyts.boot.dto.ApiResponseDto com.eazybyts.boot.controller.AdminController.addOrUpdateCar(com.eazybyts.boot.dto.CarDto) with 8 errors: [Field error in object 'carDto' on field 'fuelTankCapacity': rejected value [0]; codes [Min.carDto.fuelTankCapacity,Min.fuelTankCapacity,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.fuelTankCapacity,fuelTankCapacity]; arguments []; default message [fuelTankCapacity],1]; default message [fuel tank capacity is invalid]] [Field error in object 'carDto' on field 'transmissionType': rejected value []; codes [NotBlank.carDto.transmissionType,NotBlank.transmissionType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.transmissionType,transmissionType]; arguments []; default message [transmissionType]]; default message [transmission type cannot be empty]] [Field error in object 'carDto' on field 'version': rejected value []; codes [NotBlank.carDto.version,NotBlank.version,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.version,version]; arguments []; default message [version]]; default message [version cannot be empty]] [Field error in object 'carDto' on field 'seatingCapacity': rejected value [0]; codes [Min.carDto.seatingCapacity,Min.seatingCapacity,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.seatingCapacity,seatingCapacity]; arguments []; default message [seatingCapacity],4]; default message [seating capacity is invalid]] [Field error in object 'carDto' on field 'fuelType': rejected value []; codes [NotBlank.carDto.fuelType,NotBlank.fuelType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.fuelType,fuelType]; arguments []; default message [fuelType]]; default message [fuel type cannot be empty]] [Field error in object 'carDto' on field 'modelName': rejected value []; codes [NotBlank.carDto.modelName,NotBlank.modelName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.modelName,modelName]; arguments []; default message [modelName]]; default message [model name cannot be empty]] [Field error in object 'carDto' on field 'mileage': rejected value [0]; codes [Min.carDto.mileage,Min.mileage,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.mileage,mileage]; arguments []; default message [mileage],1]; default message [mileage is invalid]] [Field error in object 'carDto' on field 'noOfDoors': rejected value [0]; codes [Min.carDto.noOfDoors,Min.noOfDoors,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.noOfDoors,noOfDoors]; arguments []; default message [noOfDoors],1]; default message [no of doors is invalid]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:144) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:103) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:29:29.034+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:29.035+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/addOrUpdate
+2024-10-05T12:29:29.035+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:29.043+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:29.044+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:29.044+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:29.044+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:29.044+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:29.050+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-10] c.e.boot.exception.CrsExceptionHandler   : validation failed-----> {}
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.eazybyts.boot.dto.ApiResponseDto com.eazybyts.boot.controller.AdminController.addOrUpdateCar(com.eazybyts.boot.dto.CarDto) with 8 errors: [Field error in object 'carDto' on field 'transmissionType': rejected value []; codes [NotBlank.carDto.transmissionType,NotBlank.transmissionType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.transmissionType,transmissionType]; arguments []; default message [transmissionType]]; default message [transmission type cannot be empty]] [Field error in object 'carDto' on field 'noOfDoors': rejected value [0]; codes [Min.carDto.noOfDoors,Min.noOfDoors,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.noOfDoors,noOfDoors]; arguments []; default message [noOfDoors],1]; default message [no of doors is invalid]] [Field error in object 'carDto' on field 'version': rejected value []; codes [NotBlank.carDto.version,NotBlank.version,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.version,version]; arguments []; default message [version]]; default message [version cannot be empty]] [Field error in object 'carDto' on field 'modelName': rejected value []; codes [NotBlank.carDto.modelName,NotBlank.modelName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.modelName,modelName]; arguments []; default message [modelName]]; default message [model name cannot be empty]] [Field error in object 'carDto' on field 'seatingCapacity': rejected value [0]; codes [Min.carDto.seatingCapacity,Min.seatingCapacity,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.seatingCapacity,seatingCapacity]; arguments []; default message [seatingCapacity],4]; default message [seating capacity is invalid]] [Field error in object 'carDto' on field 'fuelType': rejected value []; codes [NotBlank.carDto.fuelType,NotBlank.fuelType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.fuelType,fuelType]; arguments []; default message [fuelType]]; default message [fuel type cannot be empty]] [Field error in object 'carDto' on field 'mileage': rejected value [0]; codes [Min.carDto.mileage,Min.mileage,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.mileage,mileage]; arguments []; default message [mileage],1]; default message [mileage is invalid]] [Field error in object 'carDto' on field 'fuelTankCapacity': rejected value [0]; codes [Min.carDto.fuelTankCapacity,Min.fuelTankCapacity,Min.java.lang.Short,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carDto.fuelTankCapacity,fuelTankCapacity]; arguments []; default message [fuelTankCapacity],1]; default message [fuel tank capacity is invalid]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:144) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:103) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:29:32.450+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:32.450+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/cars
+2024-10-05T12:29:32.451+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:32.458+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:32.459+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:32.460+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:32.460+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:32.460+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:45.806+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:45.808+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:29:45.809+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:45.822+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:45.824+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:45.824+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:45.824+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:45.825+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:52.990+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:52.990+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompany/add
+2024-10-05T12:29:52.991+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:52.999+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:53.000+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:53.001+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:53.001+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:53.001+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:53.030+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.exception.CrsExceptionHandler   : validation failed-----> {}
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.eazybyts.boot.dto.ApiResponseDto com.eazybyts.boot.controller.AdminController.addCarCompany(com.eazybyts.boot.dto.CarCompanyDto): [Field error in object 'carCompanyDto' on field 'companyName': rejected value []; codes [NotBlank.carCompanyDto.companyName,NotBlank.companyName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carCompanyDto.companyName,companyName]; arguments []; default message [companyName]]; default message [company name cannot be empty]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:144) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:103) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:29:56.383+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:56.384+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/cars
+2024-10-05T12:29:56.384+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:56.392+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:56.394+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:56.394+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:56.394+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:56.394+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:58.708+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:58.708+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:29:58.708+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:58.715+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:58.716+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:58.717+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:58.717+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:58.717+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:58.719+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:58.719+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/find
+2024-10-05T12:29:58.720+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:58.721+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:29:58.721+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/image/download/1003
+2024-10-05T12:29:58.722+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:29:58.732+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:58.733+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:58.733+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:58.734+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:29:58.765+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] c.e.boot.controller.AdminController      : received image id to donwload------> 1003
+2024-10-05T12:30:07.532+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:07.533+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/cars
+2024-10-05T12:30:07.533+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:07.542+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:07.543+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:07.544+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:07.545+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:07.545+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:08.610+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:08.611+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:30:08.611+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:08.611+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:08.611+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/find
+2024-10-05T12:30:08.612+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:08.621+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:08.621+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:08.622+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:08.622+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/image/download/1002
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:08.623+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:08.625+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:08.639+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:08.640+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:08.640+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:08.640+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:08.646+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:08.650+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] c.e.boot.controller.AdminController      : received image id to donwload------> 1002
+2024-10-05T12:30:12.718+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:12.719+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/cars
+2024-10-05T12:30:12.719+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:12.726+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:12.727+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:12.728+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:12.728+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:12.728+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:14.274+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:14.275+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:30:14.275+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:14.277+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:14.277+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/find
+2024-10-05T12:30:14.278+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:14.278+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:14.278+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/image/download/1003
+2024-10-05T12:30:14.278+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:14.283+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:14.284+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:14.284+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:14.284+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:14.284+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-5] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:14.289+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:14.293+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:14.294+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:14.294+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:14.294+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:14.294+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:14.296+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] c.e.boot.controller.AdminController      : received image id to donwload------> 1003
+2024-10-05T12:30:14.302+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:14.303+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:14.303+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:14.303+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-2] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:19.250+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:19.250+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:30:19.250+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:19.250+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:19.252+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/find
+2024-10-05T12:30:19.252+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:19.253+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:19.253+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/image/download/1003
+2024-10-05T12:30:19.254+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:19.257+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:19.259+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:19.260+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:19.260+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:19.262+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:19.266+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:19.266+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:19.267+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:19.267+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:19.267+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:19.268+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:19.268+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:19.268+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:19.269+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:19.269+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:19.270+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.AdminController      : received image id to donwload------> 1003
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/find
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:21.801+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:21.803+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:21.803+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/car/image/download/1003
+2024-10-05T12:30:21.803+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:21.811+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:21.811+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:21.812+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:21.813+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:21.813+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] c.e.boot.controller.AdminController      : received image id to donwload------> 1003
+2024-10-05T12:30:21.813+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-4] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:21.828+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:21.829+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:21.829+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:21.829+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:21.830+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:22.735+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:22.735+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/cars
+2024-10-05T12:30:22.735+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:22.744+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:22.745+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:22.746+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:22.746+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:22.746+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:30:24.529+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:30:24.530+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/admin/carCompanies
+2024-10-05T12:30:24.530+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:30:24.538+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:30:24.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:30:24.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:30:24.540+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:30:24.540+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1000
+2024-10-05T12:31:06.973+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:31:06.975+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/login
+2024-10-05T12:31:06.976+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] com.eazybyts.boot.config.JWTFilter       :  --------- it is an open request ------
+2024-10-05T12:31:06.985+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.CustomerController   : ***** authenticating user *****
+2024-10-05T12:31:08.243+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.CustomerController   : authorities-----> [CUSTOMER]
+2024-10-05T12:31:08.244+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-8] c.e.boot.controller.CustomerController   : name-----> chintu
+2024-10-05T12:32:49.864+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:32:49.866+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/searchCars
+2024-10-05T12:32:49.866+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:32:49.879+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:32:49.880+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:32:49.880+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:32:49.880+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:32:49.880+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-7] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:32:49.917+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-7] c.e.boot.exception.CrsExceptionHandler   : runtime error {}
+
+java.time.format.DateTimeParseException: Text '2024-10-6 05:00:00' could not be parsed at index 8
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052) ~[na:na]
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954) ~[na:na]
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494) ~[na:na]
+	at com.eazybyts.boot.service.impl.CarServiceImpl.fetchAvailableCars(CarServiceImpl.java:219) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.eazybyts.boot.service.impl.CarServiceImpl$$SpringCGLIB$$0.fetchAvailableCars(<generated>) ~[classes/:na]
+	at com.eazybyts.boot.controller.CustomerController.getAvaialableCarsForBooking(CustomerController.java:85) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.eazybyts.boot.controller.CustomerController$$SpringCGLIB$$0.getAvaialableCarsForBooking(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:103) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:33:06.774+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:33:06.775+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/searchCars
+2024-10-05T12:33:06.775+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:33:06.783+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:33:06.784+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:33:06.786+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:33:06.787+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:33:06.788+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-9] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:33:06.803+05:30 ERROR 23036 --- [CRS] [http-nio-9099-exec-9] c.e.boot.exception.CrsExceptionHandler   : runtime error {}
+
+java.time.format.DateTimeParseException: Text '2024-10-6 05:00:00' could not be parsed at index 8
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052) ~[na:na]
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954) ~[na:na]
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494) ~[na:na]
+	at com.eazybyts.boot.service.impl.CarServiceImpl.fetchAvailableCars(CarServiceImpl.java:219) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.eazybyts.boot.service.impl.CarServiceImpl$$SpringCGLIB$$0.fetchAvailableCars(<generated>) ~[classes/:na]
+	at com.eazybyts.boot.controller.CustomerController.getAvaialableCarsForBooking(CustomerController.java:85) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.eazybyts.boot.controller.CustomerController$$SpringCGLIB$$0.getAvaialableCarsForBooking(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.eazybyts.boot.config.JWTFilter.doFilterInternal(JWTFilter.java:103) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-10-05T12:33:32.343+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:33:32.343+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/searchCars
+2024-10-05T12:33:32.343+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:33:32.349+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:33:32.349+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:33:32.349+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:33:32.349+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:33:32.349+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-10] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:33:32.404+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:33:32.404+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/car/image/download/1003
+2024-10-05T12:33:32.404+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:33:32.410+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:33:32.410+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:33:32.411+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:33:32.411+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:33:32.411+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:33:32.413+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-6] c.e.boot.controller.CustomerController   : received image id to donwload------> 1003
+2024-10-05T12:33:32.452+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:33:32.453+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/car/image/download/1001
+2024-10-05T12:33:32.453+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:33:32.462+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:33:32.462+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:33:32.462+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:33:32.462+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:33:32.462+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:33:32.466+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-3] c.e.boot.controller.CustomerController   : received image id to donwload------> 1001
+2024-10-05T12:33:32.532+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ==== intercepting the request to application ====
+2024-10-05T12:33:32.532+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : request uri--> /crs/customer/car/image/download/1002
+2024-10-05T12:33:32.532+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : ---- extracting username and princpal from token ------
+2024-10-05T12:33:32.537+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       :  --------- validationg token ------------
+2024-10-05T12:33:32.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : signatureValid--------> true
+2024-10-05T12:33:32.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : usernameValid---------> true
+2024-10-05T12:33:32.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.util.JwtUtility        : tokenExpired--------> false
+2024-10-05T12:33:32.539+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] com.eazybyts.boot.config.JWTFilter       : current logged in principla----> 1001
+2024-10-05T12:33:32.541+05:30  INFO 23036 --- [CRS] [http-nio-9099-exec-1] c.e.boot.controller.CustomerController   : received image id to donwload------> 1002
+2024-10-05T20:32:58.997+05:30  INFO 23036 --- [CRS] [RMI TCP Connection(568)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-10-05T20:32:59.426+05:30  INFO 23036 --- [CRS] [RMI TCP Connection(568)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05T20:32:59.449+05:30  INFO 23036 --- [CRS] [RMI TCP Connection(568)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-05T20:32:59.465+05:30  INFO 23036 --- [CRS] [RMI TCP Connection(568)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
